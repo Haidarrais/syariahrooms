@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -34,11 +39,6 @@ header nav ul li {
 }
 header nav ul li a {
   color: #2C423F;
-}
-
-a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
 }
 
 main {
