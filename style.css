@@ -15,6 +15,10 @@ a {
   width: 90%;
   margin: 0 auto;
 }
+.container .section-title {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
 
 header {
   position: fixed;
@@ -49,48 +53,48 @@ main {
 }
 
 section {
-  height: 100vh;
+  padding-top: 1rem;
 }
 section:nth-child(even) {
   background: #EADEDA;
 }
-section .wrapper {
+section .grid-wrapper {
   display: grid;
   height: 100vh;
   align-items: center;
 }
-section .wrapper.banner {
+section .grid-wrapper.banner {
   grid-template-columns: repeat(3, 33.3%);
   grid-template-rows: minmax(0, 1fr);
 }
-section .wrapper.banner .ilustration {
+section .grid-wrapper.banner .ilustration {
   justify-self: end;
   grid-column: 2/4;
   grid-row: 1;
   width: 31rem;
 }
-section .wrapper.banner .ilustration img {
+section .grid-wrapper.banner .ilustration img {
   width: 100%;
 }
-section .wrapper.banner .left {
+section .grid-wrapper.banner .left {
   grid-column: 1/3;
   grid-row: 1;
   display: flex;
   flex-direction: column;
 }
-section .wrapper.banner .left h1 {
+section .grid-wrapper.banner .left h1 {
   font-size: 50px;
   font-family: "Roboto", sans-serif;
   color: #2C423F;
   margin-bottom: 1rem;
 }
-section .wrapper.banner .left p {
+section .grid-wrapper.banner .left p {
   font-family: "Lato", sans-serif;
   font-weight: 500;
   font-style: italic;
   margin-bottom: 1rem;
 }
-section .wrapper.banner .left .button {
+section .grid-wrapper.banner .left .button {
   margin-top: 2rem;
   background: #00BFA6;
   border-radius: 7px;
@@ -103,8 +107,29 @@ section .wrapper.banner .left .button {
   font-size: 0.9rem;
   transition: all 0.3s;
 }
-section .wrapper.banner .left .button:hover {
+section .grid-wrapper.banner .left .button:hover {
   box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
+}
+section .grid-wrapper.program {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-gap: 1rem 1rem;
+  justify-items: center;
+  margin-bottom: 1rem;
+}
+section .grid-wrapper.program .card {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 420px;
+  width: 300px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+section .grid-wrapper.program .card img {
+  width: 100%;
+}
+section .grid-wrapper.program .card .card-desc {
+  padding: 1rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
