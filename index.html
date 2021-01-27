@@ -1,121 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>    
-    <header>
-        <nav class="container">
-            <div>
-                <img src="img/logo.png" alt="">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Syariahrooms Hospotality</title>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <div class="nav__brand">
+                    <img src="assets/img/logo.png" alt="" class="logo-img">
+                    <a href="#" class="nav__logo">Syariahrooms <br> Hospotality</a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#promo" class="nav__link">PROGRAM AND PROMO</a></li>
+                        <li class="nav__item"><a href="#travel" class="nav__link">TOUR AND TRAVEL</a></li>
+                        <li class="nav__item"><a href="#investment" class="nav__link">PROPERTY INVESMENT INFO</a></li>
+                        <li class="nav__item"><a href="#travel" class="nav__link">PRODUCT</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid bd-grid__home">
+                    <div class="home__img">
+                        <img src="assets/img/home.png" alt="">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hello Fulan! Thank you for coming</h1>
+                        <p class="home__description">In these end of the year holidays invest a gift to your loved one and share the happiness at Christmas.</p>
+                        <a href="#" class="button ">Get Started</a>
+                    </div>   
+                </div>
+            </section>
+
+            <!--========== PROMO ==========-->
+            <section class="promo section bd-container" id="promo">
+                <h2 class="section-title">Program & Promo</h2>
+                <div class="promo__container bd-grid">
+                    <div class="promo__data">
+                        <img src="assets/img/promo.jpg" alt="" class="promo__img">
+                        <h3 class="promo__title">Stay 2 Nights Pay 1 Night</h3>
+                        <a href="#" class="button button-link">Gaskan</a>
+                    </div>
+
+                    <div class="promo__data">
+                        <img src="assets/img/promo.jpg" alt="" class="promo__img">
+                        <h3 class="promo__title">Stay 2 Nights Pay 1 Night</h3>
+                        <a href="#" class="button button-link">Gaskan</a>
+                    </div>
+
+                    <div class="promo__data">
+                        <img src="assets/img/promo.jpg" alt="" class="promo__img">
+                        <h3 class="promo__title">Stay 2 Nights Pay 1 Night</h3>
+                        <a href="#" class="button button-link">Gaskan</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== TOUR TRAVEL ==========-->
+            <section class="travel section bd-container" id="travel">
+                <h2 class="section-title">Tour & Travel</h2>
+
+                <div class="travel__container bd-grid">
+                    <div class="travel__content">
+                        <img src="assets/img/travel.png" alt="" class="travel__img">
+                        <h3 class="travel__title">Solo Travel</h3>
+                        <span class="travel__category">travel</span>
+                        <span class="travel__preci">$9.45</span>
+                        <a href="#" class="button travel__button"><i class='bx bxs-plane-alt'></i></a>
+                    </div>
+
+                    <div class="travel__content">
+                        <img src="assets/img/travel.png" alt="" class="travel__img">
+                        <h3 class="travel__title">Solo Travel</h3>
+                        <span class="travel__category">travel</span>
+                        <span class="travel__preci">$2.52</span>
+                        <a href="#" class="button travel__button"><i class='bx bxs-plane-alt'></i></a>
+                    </div>
+
+                    <div class="travel__content">
+                        <img src="assets/img/travel.png" alt="" class="travel__img">
+                        <h3 class="travel__title">Solo Travel</h3>
+                        <span class="travel__category">travel</span>
+                        <span class="travel__preci">$13.15</span>
+                        <a href="#" class="button travel__button"><i class='bx bxs-plane-alt'></i></a>
+                    </div>
+
+                    <div class="travel__content">
+                        <img src="assets/img/travel.png" alt="" class="travel__img">
+                        <h3 class="travel__title">Solo Travel</h3>
+                        <span class="travel__category">travel</span>
+                        <span class="travel__preci">$4.25</span>
+                        <a href="#" class="button travel__button"><i class='bx bxs-plane-alt'></i></a>
+                    </div>
+
+                    <div class="travel__content">
+                        <img src="assets/img/travel.png" alt="" class="travel__img">
+                        <h3 class="travel__title">Solo Travel</h3>
+                        <span class="travel__category">travel</span>
+                        <span class="travel__preci">$7.99</span>
+                        <a href="#" class="button travel__button"><i class='bx bxs-plane-alt'></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== INVESTMENT ==========-->
+            <section class="invest section" id="investment">
+                <div class="invest__container bd-container bd-grid">
+                    <div class="invest__content">
+                        <h2 class="section-title-center invest__title">Investment</h2>
+                        <p class="invest__description">Drop your email and get the best investment information</p>
+                        <form action="">
+                            <div class="invest__direction">
+                                <input type="text" placeholder="Email address" class="invest__input">
+                                <a href="#" class="button">Gas</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="invest__img">
+                        <img src="assets/img/investment.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Syariahrooms</a>
+                    </h3>
+                    <p class="footer__description">Temukan kenyamanan menginap seperti rumah sendiri dengan #staywithsyariah </p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Pricing </a></li>
+                        <li><a href="#" class="footer__link">Discounts</a></li>
+                        <li><a href="#" class="footer__link">Hospotality</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Our mision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#program">Program and promo</a></li>
-                <li><a href="#tour">tour and travel</a></li>
-                <li><a href="#property">property investment info</a></li>
-                <li><a href="#products">products</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-        <div class="grid-wrapper banner container">
-            <div class="left">
-                <div>                        
-                    <h1>Hello Fulan, Welcome to SyariahRooms Hospitality</h1>
-                    <p>Temukan kenyamanan menginap sepertirumah sendiri dengan #staywithsyariah</p>
-                </div>
-                <a href="" class="button">Become a member</a>
-            </div>
-            <div class="ilustration">
-                <img src="img/bg.png" alt="">
-            </div>
-        </div>    
-    </section>
-    <section id="program">
-        <div class="container">
-            <h1 class="section-title" style="text-align: center;">Program and Promo</h1>
-            <div class="grid-wrapper program">
-                <div class="card">
-                    <figure>
-                        <img src="img/promo.jpg" alt="">
-                    </figure>
-                    <div class="card-desc">
-                        <h4>Stay 2 nights Pay 1 Night</h4>
-                    </div>
-                    <div class="card-btn">
-                        <p class="card-time">30 min ago</p>
-                        <a href="" class="btn">Details</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <figure>
-                        <img src="img/promo.jpg" alt="">
-                    </figure>
-                    <div class="card-desc">
-                        <h4>Stay 2 nights Pay 1 Night</h4>
-                    </div>
-                    <div class="card-btn">
-                        <p class="card-time">30 min ago</p>
-                        <a href="" class="btn">Details</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <figure>
-                        <img src="img/promo.jpg" alt="">
-                    </figure>
-                    <div class="card-desc">
-                        <h4>Stay 2 nights Pay 1 Night</h4>
-                    </div>
-                    <div class="card-btn">
-                        <p class="card-time">30 min ago</p>
-                        <a href="" class="btn">Details</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <figure>
-                        <img src="img/promo.jpg" alt="">
-                    </figure>
-                    <div class="card-desc">
-                        <h4>Stay 2 nights Pay 1 Night</h4>
-                    </div>
-                    <div class="card-btn">
-                        <p class="card-time">30 min ago</p>
-                        <a href="" class="btn">Details</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <figure>
-                        <img src="img/promo.jpg" alt="">
-                    </figure>
-                    <div class="card-desc">
-                        <h4>Stay 2 nights Pay 1 Night</h4>
-                    </div>
-                    <div class="card-btn">
-                        <p class="card-time">30 min ago</p>
-                        <a href="" class="btn">Details</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <figure>
-                        <img src="img/promo.jpg" alt="">
-                    </figure>
-                    <div class="card-desc">
-                        <h4>Stay 2 nights Pay 1 Night</h4>
-                    </div>
-                    <div class="card-btn">
-                        <p class="card-time">30 min ago</p>
-                        <a href="" class="btn">Details</a>
-                    </div>
-                </div>
-            </div>       
-        </div>        
-    </section>
-    <section id="tour">3</section>
-    <section id="property">4</section>
-    <section id="products">4</section>
+
+            <p class="footer__copy">&#169; <span id="years" onload="yearsUpdate()"></span> Alfath Academy. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
