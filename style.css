@@ -67,7 +67,7 @@ section .grid-wrapper {
   align-items: center;
 }
 section .grid-wrapper.banner {
-  grid-template-columns: repeat(3, 33.3%);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: minmax(0, 1fr);
 }
 section .grid-wrapper.banner .ilustration {
@@ -78,6 +78,11 @@ section .grid-wrapper.banner .ilustration {
 }
 section .grid-wrapper.banner .ilustration img {
   width: 100%;
+}
+@media (max-width: 445px) {
+  section .grid-wrapper.banner .ilustration {
+    display: none;
+  }
 }
 section .grid-wrapper.banner .left {
   grid-column: 1/3;
@@ -112,6 +117,12 @@ section .grid-wrapper.banner .left .button {
 }
 section .grid-wrapper.banner .left .button:hover {
   box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 445px) {
+  section .grid-wrapper.banner .left {
+    grid-column: 1/span 4;
+    grid-row: 1;
+  }
 }
 section .grid-wrapper.program {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -158,6 +169,12 @@ section .grid-wrapper.program .card .card-btn .btn {
   border-radius: 5px;
   font-size: 12px;
   text-transform: uppercase;
+}
+@media (max-width: 445px) {
+  section .grid-wrapper.program .card {
+    height: 350px;
+    width: 250px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
